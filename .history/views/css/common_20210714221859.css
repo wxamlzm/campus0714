@@ -1,0 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.login-box {
+  width: 400px;
+  height: 400px;
+}
