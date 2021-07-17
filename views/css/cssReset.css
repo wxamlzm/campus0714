@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul, ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+input {
+  outline: none;
+  border: none;
+}
+button {
+  border: none;
+}
+html {
+  font-family:Tahoma,Arial,"Helvetica Neue","Hiragino Sans GB",Simsun,sans-self; 
+  font-size: 16px;
+}
+.center {
+  width: 1000px;
+  margin: 0 auto;
+}
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}

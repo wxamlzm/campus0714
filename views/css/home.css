@@ -1,0 +1,162 @@
+
+/* 导航栏部分 */
+.nav-part {
+  height: 50px;
+}
+.nav-part > .center > div {
+  float: left;
+  line-height: 40px;
+}
+.nav-part > .center img {
+  display: block;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.nav-part > .center > ul {
+  float: right;
+}
+.nav-part ul > li {
+  /* 设置浮动 */
+  float: left;
+  /* 设置宽度 这里更合适用定间距的方式*/
+  /* width: 100px; */
+  /* 文字居中对齐 */
+  /* 设置左右的边距 */
+  padding: 0 20px;
+  text-align: center;
+  /* 文字垂直对齐 */
+  line-height: 50px;
+}
+/* banner部分 */
+.banner-part > div{
+  background-image: url(../img/banner-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner-part .search-part {
+  width: 600px;
+  margin: 0 auto;
+  padding: 60px 0;
+  overflow: hidden;
+  text-align: center;
+}
+.banner-part .search-part > h3 {
+  color: #FFF;
+  font-size: 50px;
+  font-weight: 300;
+  margin: 30px 0;
+  text-align: center;
+}
+.banner-part .search-part > div {
+  margin: 30px 0;
+  text-align: center;
+  position: relative;
+}
+.banner-part .search-part  input[type='search'] {
+  width: 50%;
+  padding: 10px 10px;
+  border-radius: 20px;
+}
+.banner-part .search-part input[type='button'] {
+  position: absolute;
+  right: 25%;
+  width: 15%;
+  padding: 10px 10px;
+  background-color: #000;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: #FFF;
+  cursor: pointer;
+}
+.banner-part .search-part p {
+  margin: 40px 0;
+  text-align: center;
+  color: #FFF;
+}
+.banner-part .search-part button {
+  background-color: #000;
+  color: #FFF;
+  padding: 15px 30px;
+  cursor: pointer;
+}
+/* main部分 */
+main section {
+  margin: 60px 0;
+}
+main .desc {
+  width: 490px;
+  float: left;
+}
+main .desc > div {
+  float: right;
+  width: 350px;
+}
+main .desc h4 {
+  font-size: 40px;
+  height: 80px;
+  line-height: 80px;
+}
+main .desc p {
+  height: 140px;
+}
+main .desc button {
+  width: 150px;
+  padding: 10px 25px;
+  background-color: #000;
+  color: #FFF;
+}
+main section .img {
+  float: right;
+  width: 490px;
+  box-sizing: border-box;
+}
+main section .img > img {
+  width: 100%;
+}
+main section:nth-child(even) > .img {
+  float: left;
+}
+main section:nth-child(even) > .desc {
+  float: right;
+}
+main section:nth-child(even) > .desc > div{
+  float: left;
+}
+/* footer部分 */
+footer {
+  background-color: #00aeef;
+}
+footer .center > div {
+  width: 800px;
+  color: #FFF;
+  overflow: hidden;
+  margin: 0 auto;
+}
+footer .center h3 {
+  font-size: 40px;
+  margin: 40px 0;
+}
+footer .center p {
+  font-size: 12px;
+  margin: 50px 0;
+}
+footer .center > div > div {
+  position: relative;
+}
+footer .center input {
+  margin-bottom: 100px;
+  border-radius: 20px;
+}
+footer .center input[type='email'] {
+  width: 100%;
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+footer .center input[type='button'] {
+  padding: 15px 40px;
+  background-color: #000;
+  color: #FFF;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
