@@ -12,8 +12,8 @@ router.post('/login', (req, res, next)=>{
     // translate req to obj
     let reqObj = req.body;
     // execute sql
-    let strSql = '';
-    pool.query(strSql, [], (err, data)=>{
+    let strSql = 'SELECT* FROM ';
+    pool.query(strSql, [reqObj.uname, reqObj.upwd], (err, data)=>{
         if(err){
             next(err);
             return;
@@ -21,7 +21,7 @@ router.post('/login', (req, res, next)=>{
         if(data.length == 0){
             res.send({code:0,msg:'logerr'});
         }else{
-            res.send({code:1,msg:'logsuc'});
+            res.send({code:1,msg:'logsucceed'});
         };
     });
 });
@@ -30,7 +30,7 @@ router.post('/login', (req, res, next)=>{
 // address: /user/reg
 router.post('/reg', (req, res, next)=>{
     // translate req to obj
-    let reqObje = req.body;
+    let reqObj = req.body;
     // execute sql
     let strSql = '';
     pool.query(strSql, [], (err, data)=>{
